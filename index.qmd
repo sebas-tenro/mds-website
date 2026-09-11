@@ -1,6 +1,14 @@
 ---
-title: "MDS"
+title: "Sebastian Tenorio"
+about:
+  template: jolla
+  image: images/Me2.jpg
 ---
+
+
+I'm originally from Mexico, but I've been living in Canada for the past 8 years. I did my undegrad at UBC, I did a Combined Major in 
+Microbiology and Computer Science. Before MDS I was working at a Geochemichal Lab, and I realized I liked doing the analysis part of the job, which is what brought me 
+MDS. This milstone will help me set up my directory file system for the later parts of the project. 
 
 This is a Quarto website.
 
