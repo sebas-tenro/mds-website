@@ -6,10 +6,6 @@ about:
 ---
 
 
-I'm originally from Mexico, but I've been living in Canada for the past 8 years. I did my undegrad at UBC, I did a Combined Major in 
-Microbiology and Computer Science. Before MDS I was working at a Geochemichal Lab, and I realized I liked doing the analysis part of the job, which is what brought me 
-MDS. This milstone will help me set up my directory file system for the later parts of the project. 
+Hello ! and welcome to my page. My name is Sebastian, but you can call me Seb. I did my undergraduate studies at UBC, 
+and graduated from it in spring 2025. Now starting the Masters program in Data Science at UBC.
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

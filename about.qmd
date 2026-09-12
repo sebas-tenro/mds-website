@@ -3,12 +3,22 @@ title: "About"
 ---
 
 ## Background
-Im from Mexico 
+
+I'm originally from Mexico and have called Canada home for the past 8 years. I completed my undergraduate degree at UBC with a 
+Combined Major in Microbiology and Computer Science, a mix that I wasn't sure I would like at first, but eventually became a passion. 
+Before starting MDS, I worked at a geochemical laboratory, where I spent my days doing high-throughput analytical work. 
+That job is actually what pushed me toward this program: I kept finding the data side of the work more interesting than anything else, 
+and wanted to build the skills to do more of it. 
+
 
 ## Why Data Science
-Why not ?
 
+After years of generating data in the lab, I wanted to be just as comfortable analyzing it. MDS felt like the natural next step, a chance to formalize 
+the programming skills I'd picked up and turn into an actual data scientist. I'm especially interested in where data science meets biology, 
+and I'm using this program to build toward data-driven roles that let me keep working at that intersection.
 
-## Outside of data science 
-I dance
+## Outside of data science
 
+Outside of code and coursework, I love dancing (mostly latin dance). I also enjoy a good walk and reading about history. 
+I'd describe myself as a curious mind at heart: I like understanding how things work, 
+whether that's a dataset, a genome, or a new hobby, one piece at a time.
