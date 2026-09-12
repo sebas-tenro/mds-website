@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "I’m originally from Mexico and have called Canada home for the past 8 years. I completed my undergraduate degree at UBC with a Combined Major in Microbiology and Computer Science, a mix that I wasn’t sure I would like at first, but eventually became a passion. Before starting MDS, I worked at a geochemical laboratory, where I spent my days doing high-throughput analytical work. That job is actually what pushed me toward this program: I kept finding the data side of the work more interesting than anything else, and wanted to build the skills to do more of it."
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +12,20 @@
     "title": "Sebastian Tenorio",
     "section": "",
     "text": "Hello ! and welcome to my page. My name is Sebastian, but you can call me Seb. I did my undergraduate studies at UBC, and graduated from it in spring 2025. Now starting the Masters program in Data Science at UBC."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Still catching my breath from undergrad graduation, standing at the same sign that’s now the start of a new chapter.\n\n\nThe first weeks of the program have been a different kind of intensity. Between programming for data science and statistics and probability, I’ve gone from “comfortable with code” to relearning how to think about problems the way this program wants me to: rigorously and reproducibly.\nEven with that intensity, I’ve been lucky to meet really interesting people who are in the same boat. We’re sharing this experience together, and I’m grateful for that. Coming from such a diverse range of backgrounds, it feels good to be able to rely on them — and to be relied on — even though we only met a few weeks ago."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m originally from Mexico and have called Canada home for the past 8 years. I completed my undergraduate degree at UBC with a Combined Major in Microbiology and Computer Science, a mix that I wasn’t sure I would like at first, but eventually became a passion. Before starting MDS, I worked at a geochemical laboratory, where I spent my days doing high-throughput analytical work. That job is actually what pushed me toward this program: I kept finding the data side of the work more interesting than anything else, and wanted to build the skills to do more of it."
   },
   {
     "objectID": "about.html#background",
@@ -33,19 +47,5 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nOutside of code and coursework, I love dancing (mostly latin dance). I also enjoy a good walk and reading about history. I’d describe myself as a curious mind at heart: I like understanding how things work, whether that’s a dataset, a genome, or a new hobby, one piece at a time."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
-    "section": "",
-    "text": "Still catching my breath from undergrad graduation, standing at the same sign that’s now the start of a new chapter.\n\n\nThe first weeks of the program have been a different kind of intensity. Between programming for data science and statistics and probability, I’ve gone from “comfortable with code” to relearning how to think about problems the way this program wants me to: rigorously and reproducibly.\nEven with that intensity, I’ve been lucky to meet really interesting people who are in the same boat. We’re sharing this experience together, and I’m grateful for that. Coming from such a diverse range of backgrounds, it feels good to be able to rely on them — and to be relied on — even though we only met a few weeks ago."
   }
 ]
