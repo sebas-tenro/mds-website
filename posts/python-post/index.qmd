@@ -1,0 +1,7 @@
+---
+title: "Python analysis"
+author: "Sebastian Tenorio"
+date: 2026-09-21
+---
+
+![Python.](Python_logo.png)

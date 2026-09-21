@@ -1,0 +1,9 @@
+---
+title: "R analysis"
+author: "Sebastian Tenorio"
+date: 2026-09-21
+---
+
+![R.](R_logo.svg)
+
+```{r}

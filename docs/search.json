@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\nNo matching items"
+    "text": "Python analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\n\n\n\n\n\n\n\nR analysis\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nSebastian Tenorio\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -47,5 +47,19 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nOutside of code and coursework, I love dancing (mostly latin dance). I also enjoy a good walk and reading about history. I’d describe myself as a curious mind at heart: I like understanding how things work, whether that’s a dataset, a genome, or a new hobby, one piece at a time."
+  },
+  {
+    "objectID": "posts/r-post/index.html",
+    "href": "posts/r-post/index.html",
+    "title": "R analysis",
+    "section": "",
+    "text": "R."
+  },
+  {
+    "objectID": "posts/python-post/index.html",
+    "href": "posts/python-post/index.html",
+    "title": "Python analysis",
+    "section": "",
+    "text": "Python."
   }
 ]
