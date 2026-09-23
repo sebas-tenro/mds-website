@@ -4,17 +4,15 @@ author: "Sebastian Tenorio"
 date: 2026-09-21
 ---
 
-![R.](R_logo.svg)
-
 # Flight Delays by Airline
 
 I used the `nycflights23` dataset to explore how average departure delays differed between airlines operating flights from New York City airports in 2023.
 
-**Data source:** The flight data come from the [`nycflights23` R package](https://cran.r-project.org/package=nycflights23), which provides flight information for flights departing from New York City airports in 2023.
+**Data source:** The flight data come from the [`nycflights23`](https://cran.r-project.org/package=nycflights23) R package (Ismay, Couch, & Wickham, 2025), licensed under CC0, which provides flight information for flights departing from New York City airports in 2023.
 
 ```{r}
 #| message: false
-
+#| warning: false
 library(tidyverse)
 library(nycflights23)
 ```
@@ -24,6 +22,7 @@ library(nycflights23)
 First, I grouped the flights by airline and calculated the average departure delay for each carrier. I also counted the number of flights operated by each airline. Missing departure-delay values were excluded from the calculation of the average.
 
 ```{r}
+#| warning: false
 carrier_delays <- flights |>
   group_by(carrier) |>
   summarise(

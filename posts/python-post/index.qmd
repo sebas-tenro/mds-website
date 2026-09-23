@@ -4,4 +4,77 @@ author: "Sebastian Tenorio"
 date: 2026-09-21
 ---
 
-![Python.](Python_logo.png)
+# Flight Delays by Airline
+
+I used the `nycflights23` dataset to explore how average departure delays differed between airlines operating flights from New York City airports in 2023.
+
+**Data source:** The flight data come from the [`nycflights13`](https://pypi.org/project/nycflights13/) pyython package (Chow, Michael), licensed under CC0. The dataset contains flight information for flights departing from New York City airports.
+
+```{python}
+#| message: false
+#| warning: false
+import pandas as pd
+import matplotlib.pyplot as plt
+from nycflights13 import flights
+```
+
+## Average departure delay by airline
+
+First, I grouped the flights by airline and calculated the average departure delay for each carrier. I also counted the number of flights operated by each airline. Missing departure-delay values were excluded from the calculation of the average.
+
+```{python}
+#| warning: false
+carrier_delays = (
+    flights
+    .groupby("carrier")
+    .agg(
+        avg_dep_delay=("dep_delay", "mean"),
+        n_flights=("carrier", "size")
+    )
+    .reset_index()
+    .sort_values("avg_dep_delay", ascending=False)
+)
+
+carrier_delays
+```
+
+The table above shows the average departure delay and the total number of flights for each airline. This allows us to compare both the typical departure delay and the amount of flight data behind each result.
+
+For a clearer comparison, I formatted the results as a table:
+
+```{python}
+carrier_delays.rename(
+    columns={
+        "carrier": "Airline",
+        "avg_dep_delay": "Average departure delay (minutes)",
+        "n_flights": "Number of flights"
+    }
+).style.format({
+    "Average departure delay (minutes)": "{:.1f}"
+})
+```
+
+I then visualized the average departure delay for each airline. The airlines are ordered from the lowest to the highest average departure delay.
+
+```{python}
+#| label: fig-delay-by-carrier
+#| fig-cap: "Average departure delay by airline, NYC flights 2023"
+#| 
+plot_data = carrier_delays.sort_values("avg_dep_delay")
+
+plt.figure(figsize=(8, 5))
+plt.bar(
+    plot_data["carrier"],
+    plot_data["avg_dep_delay"]
+)
+
+plt.xlabel("Airline")
+plt.ylabel("Average departure delay (minutes)")
+plt.title("Average departure delay by airline")
+plt.tight_layout()
+plt.show()
+```
+
+The results show that average departure delays varied across airlines in the 2023 NYC flight data. The visualization makes these differences easier to compare than the table alone. I also included the number of flights for each airline because the average delay should be interpreted in the context of how many flights contributed to the calculation.
+
+Overall, this analysis demonstrates how grouping, summarising, and visualization can be used to investigate patterns in flight delays using Python.
