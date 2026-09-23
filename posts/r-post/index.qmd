@@ -6,4 +6,72 @@ date: 2026-09-21
 
 ![R.](R_logo.svg)
 
+# Flight Delays by Airline
+
+I used the `nycflights23` dataset to explore how average departure delays differed between airlines operating flights from New York City airports in 2023.
+
+**Data source:** The flight data come from the [`nycflights23` R package](https://cran.r-project.org/package=nycflights23), which provides flight information for flights departing from New York City airports in 2023.
+
 ```{r}
+#| message: false
+
+library(tidyverse)
+library(nycflights23)
+```
+
+## Average departure delay by airline
+
+First, I grouped the flights by airline and calculated the average departure delay for each carrier. I also counted the number of flights operated by each airline. Missing departure-delay values were excluded from the calculation of the average.
+
+```{r}
+carrier_delays <- flights |>
+  group_by(carrier) |>
+  summarise(
+    avg_dep_delay = mean(dep_delay, na.rm = TRUE),
+    n_flights = n()
+  ) |>
+  arrange(desc(avg_dep_delay))
+
+carrier_delays
+```
+
+The table above shows the average departure delay and the total number of flights for each airline. This allows us to compare both the typical departure delay and the amount of flight data behind each result.
+
+For a clearer comparison, I formatted the results as a table:
+
+```{r}
+knitr::kable(
+  carrier_delays,
+  col.names = c(
+    "Airline",
+    "Average departure delay (minutes)",
+    "Number of flights"
+  ),
+  digits = 1
+)
+```
+
+I then visualized the average departure delay for each airline. The airlines are ordered from the lowest to the highest average departure delay.
+
+```{r}
+#| label: fig-delay-by-carrier
+#| fig-cap: "Average departure delay by airline, NYC flights 2023"
+
+carrier_delays |>
+  ggplot(
+    aes(
+      x = reorder(carrier, avg_dep_delay),
+      y = avg_dep_delay
+    )
+  ) +
+  geom_col() +
+  labs(
+    x = "Airline",
+    y = "Average departure delay (minutes)",
+    title = "Average departure delay by airline"
+  )
+```
+
+The results show that average departure delays varied across airlines in the 2023 NYC flight data. The visualization makes these differences easier to compare than the table alone. I also included the number of flights for each airline because the average delay should be interpreted in the context of how many flights contributed to the calculation.
+
+Overall, this analysis demonstrates how grouping, summarising, and visualization can be used to investigate patterns in flight delays using R.
