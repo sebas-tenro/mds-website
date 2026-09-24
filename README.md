@@ -22,10 +22,9 @@ git clone https://github.com/sebas-tenro/mds-website.git
 cd mds-website
 ```
 
-```r
-# 2. Restore R packages (run in an R console, working directory set to the
-#    repo root — e.g. setwd() into it.
-renv::restore()
+```bash
+# 2. Restore R packages (run in the terminal, from the repo root)
+Rscript -e "renv::restore()"
 ```
 
 ```bash
@@ -34,7 +33,12 @@ uv sync
 ```
 
 ```bash
-# 4. Render the full site (run in the terminal, from the repo root)
+# 4. Preview the site (run in the terminal, from the repo root)
+uv run quarto preview
+```
+
+```bash
+# 5. Render the full site (run in the terminal, from the repo root)
 uv run quarto render
 ```
 
