@@ -6,6 +6,6 @@ about:
 ---
 
 
-Hello ! and welcome to my page. My name is Sebastian, but you can call me Seb. I did my undergraduate studies at UBC, 
+Hello ! Welcome to my page. My name is Sebastian, but you can call me Seb. I did my undergraduate studies at UBC, 
 and graduated from it in spring 2025. Now starting the Masters program in Data Science at UBC.
 
